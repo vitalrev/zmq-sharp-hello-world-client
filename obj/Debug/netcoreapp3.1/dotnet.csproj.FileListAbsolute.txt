@@ -1,0 +1,15 @@
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/bin/Debug/netcoreapp3.1/dotnet.deps.json
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/bin/Debug/netcoreapp3.1/dotnet.runtimeconfig.json
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/bin/Debug/netcoreapp3.1/dotnet.runtimeconfig.dev.json
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/bin/Debug/netcoreapp3.1/dotnet.dll
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/bin/Debug/netcoreapp3.1/dotnet.pdb
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/obj/Debug/netcoreapp3.1/dotnet.csprojAssemblyReference.cache
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/obj/Debug/netcoreapp3.1/dotnet.AssemblyInfoInputs.cache
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/obj/Debug/netcoreapp3.1/dotnet.AssemblyInfo.cs
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/obj/Debug/netcoreapp3.1/dotnet.csproj.CoreCompileInputs.cache
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/obj/Debug/netcoreapp3.1/dotnet.dll
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/obj/Debug/netcoreapp3.1/dotnet.pdb
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/obj/Debug/netcoreapp3.1/dotnet.genruntimeconfig.cache
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/bin/Debug/netcoreapp3.1/NativeLibraryManager.dll
+/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/dotnet/obj/Debug/netcoreapp3.1/dotnet.csproj.CopyComplete

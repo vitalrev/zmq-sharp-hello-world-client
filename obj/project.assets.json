@@ -1,0 +1,127 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.Extensions.Logging.Abstractions/3.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "NativeLibraryManager/1.0.23": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/NativeLibraryManager.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NativeLibraryManager.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.Logging.Abstractions/3.1.4": {
+      "sha512": "JNPxhw2XwhjfGFyIkA5eBfzUDPNpa6Q50HJ2F6lCAMoSa1GquAktTrl4PhEyTYFNmu09B0E90WhYsUb3kmSkOA==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.3.1.4.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec"
+      ]
+    },
+    "NativeLibraryManager/1.0.23": {
+      "sha512": "QINOsTAY2nN+PW8Lomg0VKEQjN72dqqZ1fTfGyIi1skbSzLMQJOrzH5bBq3b2NCeOhKUjYkXS7ByBtvulmMmTQ==",
+      "type": "package",
+      "path": "nativelibrarymanager/1.0.23",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NativeLibraryManager.dll",
+        "lib/netstandard2.0/NativeLibraryManager.xml",
+        "nativelibrarymanager.1.0.23.nupkg.sha512",
+        "nativelibrarymanager.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "NativeLibraryManager >= 1.0.23"
+    ]
+  },
+  "packageFolders": {
+    "/Users/vitalijreicherdt/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/client.csproj",
+      "projectName": "client",
+      "projectPath": "/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/client.csproj",
+      "packagesPath": "/Users/vitalijreicherdt/.nuget/packages/",
+      "outputPath": "/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/vitalijreicherdt/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "NativeLibraryManager": {
+            "target": "Package",
+            "version": "[1.0.23, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

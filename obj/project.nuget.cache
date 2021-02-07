@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MVYbtHDgC+pNI0pqmHKGutZkeZ0MimHWyfSojsJm0+YOhjG4y3Nszq4vDykb6qmaM3g1tVwGXjLhoUsa8n+MeA==",
+  "success": true,
+  "projectFilePath": "/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/client.csproj",
+  "expectedPackageFiles": [
+    "/Users/vitalijreicherdt/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.4/microsoft.extensions.logging.abstractions.3.1.4.nupkg.sha512",
+    "/Users/vitalijreicherdt/.nuget/packages/nativelibrarymanager/1.0.23/nativelibrarymanager.1.0.23.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsWindows Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">true</IsWindows> 
+    <IsOSX Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' == 'true'">true</IsOSX> 
+    <IsLinux Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' == 'true'">true</IsLinux> 
+  </PropertyGroup>
+  
+    <ItemGroup>
+      <EmbeddedResource Include="/usr/local/Cellar/zeromq/4.3.2/lib/libzmq.dylib" Condition="'$(IsOSX)'=='true'">
+            <Pack>true</Pack>
+      </EmbeddedResource>
+      <EmbeddedResource Include="/usr/lib/x86_64-linux-gnu/libzmq.so" Condition="'$(IsLinux)'=='true'">
+            <Pack>true</Pack>
+      </EmbeddedResource>
+    </ItemGroup>
+        
+    <ItemGroup>
+      <PackageReference Include="NativeLibraryManager" Version="1.0.23" />
+    </ItemGroup>
+    
+</Project>
