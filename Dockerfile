@@ -22,8 +22,8 @@ RUN apt-get update && \
     apt-get install -y libtool libzmq3-dev
 
 WORKDIR /app
+RUN chmod -R 777 /app
 COPY --from=builder /app/out .
-
-RUN ls -la /usr/lib/x86_64-linux-gnu/
+RUN ls -la
 
 ENTRYPOINT ["./client"]
