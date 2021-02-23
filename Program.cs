@@ -34,6 +34,8 @@ namespace client
         {
             Console.WriteLine("Hello World Client starting...");
 
+            CheckEnvVar("ZMQ_SERVER_HOST", "lissi-cloud-dev.westeurope.cloudapp.azure.com");
+
             var accessor = new ResourceAccessor(Assembly.GetExecutingAssembly());
 
             LibraryManager libManager;
@@ -89,7 +91,7 @@ namespace client
                 zmq_setsockopt(socket, ZMQ_SOCKS_PASSWORD, proxy_password, proxy_password.Length);
             }
 
-            zmq_connect(socket, String.Format("tcp://{0}:5555", server_host));
+            zmq_connect(socket, String.Format("tcp://{0}:9702", server_host));
 
             int request_nbr;
             for (request_nbr = 0; request_nbr < 10; request_nbr++)
@@ -104,6 +106,14 @@ namespace client
             }
             zmq_close(socket);
             zmq_ctx_destroy(context);
+        }
+
+        private static void CheckEnvVar(string envVar, string defaultValue)
+        {
+            if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable(envVar)))
+            {
+                Environment.SetEnvironmentVariable(envVar, defaultValue);
+            }
         }
 
     }
