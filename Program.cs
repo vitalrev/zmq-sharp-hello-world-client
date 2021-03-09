@@ -34,7 +34,7 @@ namespace client
         {
             Console.WriteLine("Hello World Client starting...");
 
-            CheckEnvVar("ZMQ_SERVER_HOST", "lissi-cloud-dev.westeurope.cloudapp.azure.com");
+            CheckEnvVar("ZMQ_SERVER_HOST", "lissi-cloud-dev.westeurope.cloudapp.azure.com:9702");
 
             var accessor = new ResourceAccessor(Assembly.GetExecutingAssembly());
 
@@ -68,30 +68,16 @@ namespace client
             var socket = zmq_socket(context, 3); // 3 = ZMQ_REQ
 
             var server_host = Environment.GetEnvironmentVariable("ZMQ_SERVER_HOST");
-            Console.WriteLine("ZMQ_SERVER_HOST: {0}", server_host);
+            Console.WriteLine("ZMQ_SERVER_HOST and Port: {0}", server_host);
 
             var socks_proxy = Environment.GetEnvironmentVariable("ZMQ_SOCKS_PROXY");
-            Console.WriteLine("ZMQ_SOCKS_PROXY: {0}", socks_proxy);
             if (socks_proxy != null)
             {
+                Console.WriteLine("ZMQ_SOCKS_PROXY: {0}", socks_proxy);
                 zmq_setsockopt(socket, ZMQ_SOCKS_PROXY, socks_proxy, socks_proxy.Length);
             }
 
-            var proxy_user = Environment.GetEnvironmentVariable("ZMQ_PROXY_USER");
-            Console.WriteLine("ZMQ_PROXY_USER: {0}", proxy_user);
-            if (proxy_user != null)
-            {
-                zmq_setsockopt(socket, ZMQ_SOCKS_USERNAME, proxy_user, proxy_user.Length);
-            }
-
-            var proxy_password = Environment.GetEnvironmentVariable("ZMQ_PROXY_PASSWORD");
-            Console.WriteLine("ZMQ_PROXY_PASSWORD: {0}", proxy_password);
-            if (proxy_password != null)
-            {
-                zmq_setsockopt(socket, ZMQ_SOCKS_PASSWORD, proxy_password, proxy_password.Length);
-            }
-
-            zmq_connect(socket, String.Format("tcp://{0}:9702", server_host));
+            zmq_connect(socket, String.Format("tcp://{0}", server_host));
 
             int request_nbr;
             for (request_nbr = 0; request_nbr < 10; request_nbr++)

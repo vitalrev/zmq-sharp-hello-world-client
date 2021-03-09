@@ -24,6 +24,5 @@ RUN apt-get update && \
 WORKDIR /app
 RUN chmod -R 777 /app
 COPY --from=builder /app/out .
-RUN ls -la
 
 ENTRYPOINT ["./client"]
