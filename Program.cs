@@ -34,7 +34,7 @@ namespace client
         {
             Console.WriteLine("Hello World Client starting...");
 
-            CheckEnvVar("ZMQ_SERVER_HOST", "lissi-cloud-dev.westeurope.cloudapp.azure.com:9702");
+            CheckEnvVar("ZMQ_SERVER_HOST", "137.117.199.77:9702");
             CheckEnvVar("ZMQ_SOCKS_PROXY", "pxvip02.intranet.commerzbank.com:1080");
 
             var accessor = new ResourceAccessor(Assembly.GetExecutingAssembly());
