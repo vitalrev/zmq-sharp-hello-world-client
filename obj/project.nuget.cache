@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "PnG6iMTjF2M9OpzubyzOLBzzBWBjMK4gycX7Q2eHY/p220b9otVOSbGFPgURzSt8LNIm07kvKdaTtu0Ko6C+sA==",
+  "dgSpecHash": "pCgue5xMcKfgHhKtlUDfLNxq9qTEvLy4kgk379QzhMP8PaqE5X31opbKnsCXCs19y3x/H6aEp5kyx5/reaKe6A==",
   "success": true,
-  "projectFilePath": "/Users/vitalijreicherdt/BlockChain/TEST/ZMQNetHelloWorldClient/client.csproj",
+  "projectFilePath": "/home/lissi/TEST/zmq-sharp-hello-world-client/client.csproj",
   "expectedPackageFiles": [
-    "/Users/vitalijreicherdt/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.4/microsoft.extensions.logging.abstractions.3.1.4.nupkg.sha512",
-    "/Users/vitalijreicherdt/.nuget/packages/nativelibrarymanager/1.0.23/nativelibrarymanager.1.0.23.nupkg.sha512"
+    "/home/lissi/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.4/microsoft.extensions.logging.abstractions.3.1.4.nupkg.sha512",
+    "/home/lissi/.nuget/packages/nativelibrarymanager/1.0.23/nativelibrarymanager.1.0.23.nupkg.sha512",
+    "/home/lissi/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/lissi/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/3.1.13/microsoft.netcore.app.runtime.linux-x64.3.1.13.nupkg.sha512",
+    "/home/lissi/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/3.1.13/microsoft.aspnetcore.app.runtime.linux-x64.3.1.13.nupkg.sha512",
+    "/home/lissi/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.13/microsoft.netcore.app.host.linux-x64.3.1.13.nupkg.sha512",
+    "/home/lissi/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
   ],
   "logs": []
 }
